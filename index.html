@@ -12,13 +12,14 @@
     <p id="description">A small survey about you! </br>
     Answer the questions truthfully!</p>
     <form id="survey-form">
-      <lable for="fname">First Name: </lable>
+      <lable for="fname" id="name-label">Name: </lable>
       <input type="text" id="name" name="fname"></br>
-      <lable for="emailInput">Email: </lable>
+      <lable for="emailInput" id="email-label">Email: </lable>
       <input type="email" id="email" name="emailInput"></br>
-      <label for="number">Age: </label>
-      <input type="number" id="number" name="number"></br>
-      <input type="submit" id="" name="submit">
+      <label for="number" id="number-label">Age: </label>
+      <input type="number" id="number" name="number" min=1  max=99></br>
+
+      <input type="submit" id="submit" name="submit">
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script  src="js/index.js"></script>
